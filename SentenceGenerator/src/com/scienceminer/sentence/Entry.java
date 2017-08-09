@@ -1,7 +1,7 @@
 package com.scienceminer.sentence;
 
 public class Entry {
-
+ 
 	
 	private String _word;
 	private GrammarEnum _type;

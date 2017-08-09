@@ -6,7 +6,7 @@ import java.util.Random;
 import com.scienceminer.sentence.PhraseStructure.STYPES;
 
 public class Words {
-
+ 
 	
 	protected enum Genre {
 		HOME,

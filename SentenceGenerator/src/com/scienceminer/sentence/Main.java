@@ -1,5 +1,5 @@
 package com.scienceminer.sentence;
-
+ 
 public class Main {
 
 	

@@ -11,7 +11,7 @@ import com.scienceminer.sentence.Words.SUBJECTOBJECT;
 
 public class WordMap {
 
-	
+	 
 	private class MultiKey {
 		private STYPES _stype;
 		private Genre _genre;

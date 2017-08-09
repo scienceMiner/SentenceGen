@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class Dictionary {
-
+ 
 	
 	public static Collection< Entry > nouns = new ArrayList< Entry >();
 	
