@@ -11,7 +11,7 @@ public class PhraseStructure {
 
 private static Random rnd = new Random(); 
   
-protected enum STYPES { 
+public enum STYPES { 
 	
 	S(false), N(true), NP(false), VP(false), PP(false), V(true),T(true), D(true), A(true);
 

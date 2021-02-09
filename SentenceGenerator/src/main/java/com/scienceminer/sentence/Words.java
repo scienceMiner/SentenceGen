@@ -48,7 +48,7 @@ public class Words {
 				
 	}
 	
-	String match(STYPES s)
+	public String match(STYPES s)
 	{
 		List<String> options = wordMap.get(s);
 		Random rnd = new Random();
@@ -61,22 +61,27 @@ public class Words {
 		
 		wordMap.put(STYPES.D,Genre.HOME, "Our", SUBJECTOBJECT.SUBJECT);
 		wordMap.put(STYPES.D, "The");
+		wordMap.put(STYPES.D, "A");
 		wordMap.put(STYPES.A, "happy");
 		wordMap.put(STYPES.A, "strange");
 		wordMap.put(STYPES.A, "stinky");
-		wordMap.put(STYPES.D, "A");
-		wordMap.put(STYPES.N , "man");
-		wordMap.put(STYPES.N, "person");
+		wordMap.put(STYPES.A, "loud");
+		wordMap.put(STYPES.A, "eccentric");
+		wordMap.put(STYPES.A, "blocked");
 		wordMap.put(STYPES.V, "find");
 		wordMap.put(STYPES.V, "run");
 		wordMap.put(STYPES.V, "examine");
+		wordMap.put(STYPES.V, "tests");
+		wordMap.put(STYPES.V, "fills");
 		wordMap.put(STYPES.V, "walk");
 		wordMap.put(STYPES.V, "sleep");
-		wordMap.put(STYPES.T, "will");
-		wordMap.put(STYPES.A, "eccentric");
 		wordMap.put(STYPES.N, "woman");
 		wordMap.put(STYPES.N, "alien");
-		wordMap.put(STYPES.N, "african");
+		wordMap.put(STYPES.N, "pensioner");
+		wordMap.put(STYPES.N , "man");
+		wordMap.put(STYPES.N , "squirrels");
+		wordMap.put(STYPES.N, "person");
+		wordMap.put(STYPES.T, "will");
 		wordMap.put(STYPES.T, "won't");
 		
 		
@@ -84,13 +89,23 @@ public class Words {
 	
 	public static void main(String[] args)
 	{
-		PhraseStructure ps = new PhraseStructure();
-		Words words = new Words();
-		List<STYPES> test = ps.generate(STYPES.S);
-		for (STYPES item : test) { System.out.print(item); }
-		System.out.println();
-		for (STYPES item : test) { System.out.print(words.match(item) + " "); }
+		for (;; ) {
+			PhraseStructure ps = new PhraseStructure();
+			Words words = new Words();
+			List<STYPES> test = ps.generate(STYPES.S);
+			for (STYPES item : test) { System.out.print(item); }
+			System.out.println();
+			for (STYPES item : test) { System.out.print(words.match(item) + " "); }
+			System.out.println("\n");
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	
+	
 	}
-	
-	
+
 }
